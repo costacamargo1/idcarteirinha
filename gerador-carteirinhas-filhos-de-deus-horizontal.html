@@ -43,6 +43,10 @@
   .topbar .mark{width:auto;height:32px;flex:0 0 auto;filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))}
   .topbar h1{font-size:15px;font-weight:700;margin:0;letter-spacing:.3px}
   .topbar p{margin:2px 0 0;font-size:12px;color:var(--ui-mut);font-weight:500}
+  .models{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+  .models a{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid var(--ui-line);color:var(--ui-mut);white-space:nowrap}
+  .models a:hover{color:var(--ui-text);border-color:#454D57}
+  .models a.on{color:#0F1215;border-color:transparent;background:linear-gradient(120deg,var(--orange-lt),var(--orange))}
   .topbar .tag{margin-left:auto;font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#0F1215;background:linear-gradient(120deg,var(--orange-lt),var(--orange));padding:5px 12px;border-radius:999px}
 
   .layout{display:grid;grid-template-columns:380px 1fr;gap:0;align-items:start}
@@ -218,7 +222,10 @@
     <h1>Gerador de carteirinhas</h1>
     <p>Comunidade Evangélica Filhos de Deus</p>
   </div>
-  <span class="tag">Horizontal · CR80</span>
+  <nav class="models" aria-label="Modelos">
+    <a class="on" href="gerador-carteirinhas-filhos-de-deus-horizontal.html" aria-current="page">Modelo 1 · Filhos de Deus</a>
+    <a href="gerador-carteirinhas-igreja-missao.html">Modelo 2 · Igreja Missão</a>
+  </nav>
 </div>
 
 <div class="layout">
